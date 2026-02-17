@@ -1,0 +1,61 @@
+body {
+    margin: 30px;   
+}
+
+fieldset {
+    padding: 1cm;   
+}
+
+.container {
+    width: 70%;   
+}
+
+h1 {
+    font-size: 3rem; 
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+header {
+    padding: 3vh;    
+}
+
+h1, h2 {
+    color: rgb(36, 118, 169);
+}
+
+div p {
+    color: rgb(218, 115, 25);
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    background-color: #50e77b;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: rgb(182, 38, 170);
+}
+
+input:focus {
+    border: 2px solid rgb(16, 134, 212);
+}
+
+input[type="submit"]:active, input[type="reset"]:active  {
+    background-color: rgb(220, 79, 14);
+}
+
+a:hover {
+    color: rgb(186, 42, 140);
+    text-decoration: underline;
+}
+
+a:active {
+    color: orange;
+}
+
+a:focus {
+    outline: 2px solid blue;
+}
