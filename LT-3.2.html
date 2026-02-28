@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Arrays and Basic Objects </title>
+</head>
+<body>
+
+    <h1>Lab Task 3_2</h1>
+
+    <h2>Part A: Arrays</h2>
+    <div id="partA"></div>
+
+    <h2>Part B: Array Operations</h2>
+    <div id="partB"></div>
+
+    <h2>Part C: Basic Object</h2>
+    <div id="partC"></div>
+
+    <h2>Part D: Array of Objects</h2>
+    <div id="partD"></div>
+
+<script>
+    let courses = ["OOP2", "Web Technologies", "IEC", "Artificial Intelligence", "C++"];
+
+    let outputA = "Courses:<br>";
+
+    for (let i = 0; i < courses.length; i++) 
+    {
+        outputA += courses[i] + "<br>";
+    }
+
+    courses.push("Math06");
+
+    outputA += "<br>After Adding New Course:<br>";
+
+    for (let i = 0; i < courses.length; i++) 
+    {
+        outputA += courses[i] + "<br>";
+    }
+
+    document.getElementById("partA").innerHTML = outputA;
+
+
+    let outputB = "";
+
+    outputB += "Array Length: " + courses.length + "<br><br>";
+
+    courses.pop();
+
+    courses.unshift("Algorithms");
+
+    outputB += "Final Array Content:<br>";
+
+    for (let i = 0; i < courses.length; i++) 
+    {
+        outputB += courses[i] + "<br>";
+    }
+
+    document.getElementById("partB").innerHTML = outputB;
+
+    let student = 
+    {
+        name: "Adiba Humaira",
+        id: "22-57896-3",
+        department: "CSE",
+        cgpa: 3.75
+    };
+
+    let outputC = "";
+
+    outputC += "Name: " + student.name + "<br>";
+    outputC += "ID: " + student.id + "<br>";
+    outputC += "Department: " + student.department + "<br>";
+    outputC += "CGPA: " + student.cgpa + "<br>";
+
+    document.getElementById("partC").innerHTML = outputC;
+
+    let students = 
+    [
+        { name: "Adnan Rahman", id: "22-56753-1", department: "CSE", cgpa: 3.75 },
+        { name: "Sagor Bin Yeamin", id: "23-7867-3", department: "CSE", cgpa: 3.85 },
+        { name: "Raihan Mahmud", id: "24-54567-3", department: "EEE", cgpa: 3.60 }
+    ];
+
+    let outputD = "";
+
+    for (let i = 0; i < students.length; i++) 
+    {
+        outputD += "Student " + (i + 1) + "<br>";
+        outputD += "Name: " + students[i].name + "<br>";
+        outputD += "ID: " + students[i].id + "<br>";
+        outputD += "Department: " + students[i].department + "<br>";
+        outputD += "CGPA: " + students[i].cgpa + "<br><br>";
+    }
+
+    document.getElementById("partD").innerHTML = outputD;
+
+</script>
+
+</body>
+</html>

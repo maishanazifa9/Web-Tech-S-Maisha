@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions, Loops and String Operations </title>
+</head>
+<body>
+
+    <h1>Lab Task 2.2</h1>
+
+    <h2>Part A: Functions</h2>
+    <p id="sumResult"></p>
+
+    <h2>Part B: Loops</h2>
+    <p id="forLoop"></p>
+    <p id="whileLoop"></p>
+
+    <h2>Part C: String Operations</h2>
+    <p id="upperCase"></p>
+    <p id="length"></p>
+    <p id="firstName"></p>
+
+    <h2>Part D: Function with User Input</h2>
+    <p id="checkLength"></p>
+
+    <script>
+    
+        function calculateSum(num1, num2) 
+        {
+            return num1 + num2;
+        }
+
+        let result = calculateSum(30, 40);
+        document.getElementById("sumResult").innerHTML = "Sum of 30 and 40 is: " + result;
+
+        let numbers = "";
+        for (let i = 1; i <= 10; i++) 
+        {
+            numbers += i + " ";
+        }
+        
+        document.getElementById("forLoop").innerHTML = "Numbers from 1 to 10: " + numbers;
+
+        let evenNumbers = "";
+        let j = 1;
+        while (j <= 20) 
+        {
+            if (j % 2 === 0) 
+            {
+                evenNumbers += j + " ";
+            }
+            j++;
+        }
+
+        document.getElementById("whileLoop").innerHTML ="Even numbers from 1 to 20: " + evenNumbers;
+
+        let fullName = "Nazifa Tarannum Maisha";
+        document.getElementById("upperCase").innerHTML = "Uppercase: " + fullName.toUpperCase();
+
+        document.getElementById("length").innerHTML = "Length: " + fullName.length;
+
+        let first = fullName.split(" ")[0];
+        document.getElementById("firstName").innerHTML ="First Name: " + first;
+
+        function checkStringLength() 
+        {
+            let userInput = prompt("Enter a string:");
+            
+            if (userInput.length > 5) 
+            {
+                document.getElementById("checkLength").innerHTML ="The string length is greater than 5.";
+            } 
+            else 
+            {
+                document.getElementById("checkLength").innerHTML ="The string length is less then 5.";
+            }
+        }
+
+        checkStringLength();
+    </script>
+
+</body>
+</html>
