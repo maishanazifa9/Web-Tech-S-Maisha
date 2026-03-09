@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+
+<body>
+
+    <h1>Student List</h1>
+
+    <form id="student-form">
+        <label>Student Name:</label>
+        <input type="text" id="student-name" placeholder="Enter student name">
+        <label>Roll No:</label>
+        <input type="text" id="student-roll" placeholder="Enter roll number">
+        <button type="submit" id="add-btn" disabled>Add Student</button>
+    </form>
+
+    <input type="text" id="search-student" placeholder="Search student">
+    <ul id="student-list"></ul>
+    <p id="total">Total students: 0</p>
+    <p id="attendance">Present: 0, Absent: 0</p>
+
+    <div style="text-align:center;">
+        <button id="sort-btn">Sort A–Z</button>
+        <button id="highlight-btn">Highlight First Student</button>
+    </div>
+
+    <script src="dom.js"></script>
+
+</body>
+</html>
