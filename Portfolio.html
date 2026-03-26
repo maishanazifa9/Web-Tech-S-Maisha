@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazifa Portfolio</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2>Nazifa<span>.</span></h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle">☀</button>
+    </nav>
+</header>
+
+<main>
+    <section id="home">
+        <h1>NAZIFA TARANNUM MAISHA</h1>
+        <h2 id="typing-text"></h2>
+        <p>From concept to deployment, I combine creativity and technical precision to build impactful digital solutions.</p>
+    </section>
+    <section class="hero-split">
+        <div class="hero-right">
+            <img id="hero-image" src="" alt="Project Preview">
+        </div>
+        <div class="hero-left">
+            <h1 id="hero-title"></h1>
+            <p id="hero-desc"></p>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="filter-buttons">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('web')">Web</button>
+            <button onclick="filterProjects('app')">App</button>
+            <button onclick="filterProjects('desktop')">Desktop</button>
+        </div>
+        <div id="project-container"></div>
+    </section>
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">C++</div>
+            <div class="skill">C#</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Git & GitHub</div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Name">
+            <small class="error"></small>
+            <input type="email" id="email" placeholder="Email">
+            <small class="error"></small>
+            <input type="text" id="subject" placeholder="Subject">
+            <small class="error"></small>
+            <textarea id="message" placeholder="Message"></textarea>
+            <small class="error"></small>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Nazifa Tarannum Maisha. All rights reserved.</p>
+</footer>
+
+<button id="scrollTop">↑</button>
+
+<script src="Portfolio.js"></script>
+</body>
+</html>
